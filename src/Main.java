@@ -15,35 +15,36 @@ public class Main extends Application {
     private static final int WIDTH = 1000;
     private static final int HEIGHT = 700;
     public void start(Stage primaryStage) throws Exception{
-
+        //creates shapes and sets their sizes
         Sphere sphere = new Sphere(50);
         Box box = new Box();
         box.setWidth(110);
         box.setHeight(110);
         box.setDepth(110);
+        //adds shapes to a group container
         Group group = new Group();
         group.getChildren().add(sphere);
         group.getChildren().add(box);
-
+        //creates scene by adding group and adding camera
         Camera camera = new PerspectiveCamera();
         Scene scene = new Scene(group, WIDTH, HEIGHT);
         scene.setFill(Color.SILVER);
         scene.setCamera(camera);
-
+        //sets position of sphere
         sphere.translateXProperty().set(500);
         sphere.translateYProperty().set(350);
         sphere.translateZProperty().set(-300);
-
+        //sets position of box
         box.translateXProperty().set(600);
         box.translateYProperty().set(350);
         box.translateZProperty().set(400);
-
+        //sets camera clip boundaries
         camera.setNearClip(0);
         camera.setFarClip(1000);
 
         Transform panRight = new Rotate(1, new Point3D(0, 1, 0));
         Transform panLeft = new Rotate(1, new Point3D(0, 1, 0));
-
+        //camera controls
         primaryStage.addEventHandler(KeyEvent.KEY_PRESSED, event -> {
             switch (event.getCode()){
                 case W:
