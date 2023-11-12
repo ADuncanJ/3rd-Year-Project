@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="lwjgl-meow">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lwjgl-meow" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/lwjgl-meow" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/lwjgl-meow" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/lwjgl-meow" recursive="false" type="SOURCES" />
+  </library>
+</component>

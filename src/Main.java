@@ -27,6 +27,16 @@ public class Main extends Application {
         //material.setSpecularColor(Color.WHITE);
         material.setSpecularMap(new Image(getClass().getResourceAsStream("/resources/spec-map.jpeg")));
 
+        Box table = new Box();
+
+        table.setWidth(300);
+        table.setDepth(300);
+        table.setHeight(10);
+
+        table.translateZProperty().set(400);
+        table.translateXProperty().set(600);
+        table.translateYProperty().set(400);
+
 
 
         PointLight pointLight = new PointLight();
@@ -44,6 +54,7 @@ public class Main extends Application {
         Group group = new Group();
         group.getChildren().add(sphere);
         group.getChildren().add(box);
+        group.getChildren().add(table);
         group.getChildren().add(pointLight);
         //group.getChildren().addAll(prepLight());
 
