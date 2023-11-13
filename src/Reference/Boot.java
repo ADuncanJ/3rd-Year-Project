@@ -1,11 +1,10 @@
+package Reference;
+
 import org.lwjgl.glfw.Callbacks;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.glfw.GLFWVidMode;
-import org.lwjgl.opengl.GL;
-import org.lwjgl.opengl.GL11;
-import org.lwjgl.opengl.GL20;
-import org.lwjgl.opengl.GL30;
+import org.lwjgl.opengl.*;
 import org.lwjgl.system.MemoryStack;
 
 import java.nio.IntBuffer;
@@ -74,15 +73,26 @@ public class Boot {
                             0f,0.5f,0f};
         int[] indices = {0,1,2};
 
-        Mesh mesh = MeshLoader.createMesh(vertices, indices);
+        float[] UVs = {-0.5f,-0.5f,0f,
+                0.5f, -0.5f, 0f,
+                0f,0.5f,0f};
+
+
+        Mesh mesh = MeshLoader.createMesh(vertices,UVs, indices);
+
+        int texture = Texture.loadTexture("wood.jpeg");
 
         while ((!GLFW.glfwWindowShouldClose(window))){
             GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT);
 
             GL30.glBindVertexArray(mesh.getVao());
             GL20.glEnableVertexAttribArray(0);
+            GL20.glEnableVertexAttribArray(1);
+            GL13.glActiveTexture(GL13.GL_TEXTURE0);
+            GL11.glBindTexture(GL11.GL_TEXTURE_2D, texture);
             GL11.glDrawElements(GL11.GL_TRIANGLES, mesh.getVertexCount(), GL11.GL_UNSIGNED_INT, 0);
             GL20.glDisableVertexAttribArray(0);
+            GL20.glDisableVertexAttribArray(1);
             GL30.glBindVertexArray(0);
 
             GLFW.glfwSwapBuffers(window);

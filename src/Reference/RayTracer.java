@@ -1,4 +1,4 @@
-/*
+package Reference;/*
 * IDEAS:
 * Use of multiple threads to increase speed of program - is 1 ray per thread too many threads
 * either overwrite or extend some existing Javafx light to allow for manipulation of rays

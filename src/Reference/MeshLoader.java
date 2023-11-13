@@ -1,3 +1,5 @@
+package Reference;
+
 import org.lwjgl.BufferUtils;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL15;
@@ -45,9 +47,10 @@ public class MeshLoader {
         GL15.glBufferData(GL15.GL_ELEMENT_ARRAY_BUFFER, buffer, GL15.GL_STATIC_DRAW);
     }
 
-    public static Mesh createMesh(float[] positions, int[] indices) {
+    public static Mesh createMesh(float[] positions,float[] UVs, int[] indices) {
         int vao = genVAO();
         storeData(0, 3 ,positions);
+        storeData(1,2, UVs);
         bindIdices(indices);
         GL30.glBindVertexArray(0);
         return new Mesh(vao, indices.length);

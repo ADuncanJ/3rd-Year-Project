@@ -54,5 +54,7 @@
     <orderEntry type="library" name="lwjgl-xxhash" level="project" />
     <orderEntry type="library" name="lwjgl-yoga" level="project" />
     <orderEntry type="library" name="lwjgl-zstd" level="project" />
+    <orderEntry type="library" name="joml" level="project" />
+    <orderEntry type="library" name="tinylog" level="project" />
   </component>
 </module>

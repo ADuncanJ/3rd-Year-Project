@@ -1,3 +1,5 @@
+package Reference;
+
 import org.lwjgl.*;
 import org.lwjgl.system.*;
 import org.lwjgl.opengl.*;
@@ -8,10 +10,8 @@ import java.nio.*;
 import static org.lwjgl.glfw.Callbacks.*;
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.opengl.GL11.*;
-import org.lwjgl.opengl.GL15;
 import static org.lwjgl.system.MemoryStack.*;
 import static org.lwjgl.system.MemoryUtil.*;
-import org.lwjgl.BufferUtils;
 
 public class HelloWorld {
 
