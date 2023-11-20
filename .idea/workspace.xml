@@ -1,36 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6843d09f-1d91-4da2-89d3-c8c291e44898" name="Changes" comment="Switched to LWJGL and began creating polygons">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/joml.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/tinylog.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Reference/Shader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Reference/ShaderTextured.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Reference/Texture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Engine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Logic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Scene/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Scene/Projection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Scene/Scene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Window.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/graph/Mesh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/graph/Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/graph/Render.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/graph/SceneRender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/graph/ShaderProgram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/graph/UniformsMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/shaders/Texture.fs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/shaders/Texture.vs" afterDir="false" />
+    <list default="true" id="6843d09f-1d91-4da2-89d3-c8c291e44898" name="Changes" comment="Created rotating cube">
+      <change afterPath="$PROJECT_DIR$/src/engine/graph/Material.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/graph/Texture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/graph/TextureCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/cube/cube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/default/default_texture.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Boot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reference/Boot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reference/HelloWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reference/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mesh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reference/Mesh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeshLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reference/MeshLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RayTracer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reference/RayTracer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/src.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Scene/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Scene/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/Mesh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/Mesh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/SceneRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/SceneRender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/UniformsMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/UniformsMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699780520102</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Created rotating cube">
+      <created>1699917915888</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1699917915888</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,7 +227,8 @@
     <MESSAGE value="Basic 3D environment with some simple shapes" />
     <MESSAGE value="added simple lighting" />
     <MESSAGE value="Switched to LWJGL and began creating polygons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Switched to LWJGL and began creating polygons" />
+    <MESSAGE value="Created rotating cube" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created rotating cube" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

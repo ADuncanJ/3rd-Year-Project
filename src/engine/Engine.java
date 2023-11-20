@@ -33,7 +33,7 @@ public class Engine {
     }
 
     private void resize(){
-
+        scene.resize(window.getWidth(), window.getHeight());
     }
 
     private void run(){

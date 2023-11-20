@@ -72,6 +72,9 @@ public class Window {
 
         int[] arrWidth = new int[1];
         int[] arrHeight = new int[1];
+        glfwGetFramebufferSize(windowHandle, arrWidth, arrHeight);
+        width = arrWidth[0];
+        height = arrWidth[0];
     }
 
     public void cleanup(){
