@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6843d09f-1d91-4da2-89d3-c8c291e44898" name="Changes" comment="Created rotating cube">
-      <change afterPath="$PROJECT_DIR$/src/engine/graph/Material.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/graph/Texture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/graph/TextureCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/cube/cube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/default/default_texture.png" afterDir="false" />
+    <list default="true" id="6843d09f-1d91-4da2-89d3-c8c291e44898" name="Changes" comment="added textures">
+      <change afterPath="$PROJECT_DIR$/src/engine/MouseInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/Scene/Camera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/Scene/ModelLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Engine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/Scene/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Scene/Scene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/graph/Mesh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/Mesh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/graph/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/Material.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/Render.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/Render.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/graph/SceneRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/SceneRender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/graph/UniformsMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/UniformsMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Main.java" afterDir="false" />
@@ -62,7 +60,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="openjdk-17" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lwjgl-zstd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -208,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699917915888</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added textures">
+      <created>1700522258546</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1700522258546</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,7 +233,8 @@
     <MESSAGE value="added simple lighting" />
     <MESSAGE value="Switched to LWJGL and began creating polygons" />
     <MESSAGE value="Created rotating cube" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created rotating cube" />
+    <MESSAGE value="added textures" />
+    <option name="LAST_COMMIT_MESSAGE" value="added textures" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

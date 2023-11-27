@@ -12,8 +12,10 @@ import static org.lwjgl.glfw.GLFW.*;
 
 public class Main implements Logic {
 
+    private static final float MOUSE_SENSITIVITY = 0.1f;
+    private static final float MOVEMENT_SPEED = 0.005f;
+
     private Entity cubeEntity;
-    private Vector4f dispInc = new Vector4f();
     private float rotation;
 
     public static void main(String[] args) {
@@ -29,7 +31,7 @@ public class Main implements Logic {
 
     @Override
     public void init(Window window, Scene scene, Render render) {
-        float[] positions = new float[]{
+        /*float[] positions = new float[]{
                 //V0
                 -0.5f, 0.5f, 0.5f,
                 //V1
@@ -134,6 +136,9 @@ public class Main implements Logic {
         Mesh mesh = new Mesh(positions, textCoords, indices);
         material.getMeshList().add(mesh);
         Model cubeModel = new Model("cube-model", materialList);
+        scene.addModel(cubeModel);*/
+
+        Model cubeModel = ModelLoader.loadModel("cube-model", "src/resources/models/cube/cube.obj",scene.getTextureCache());
         scene.addModel(cubeModel);
 
         cubeEntity = new Entity("cube-entity", cubeModel.getId());
@@ -143,34 +148,29 @@ public class Main implements Logic {
 
     @Override
     public void input(Window window, Scene scene, long diffTimeMillis) {
-        dispInc.zero();
-        if(window.isKeyPressed(GLFW_KEY_UP)){
-            dispInc.y = 1;
-        } else if (window.isKeyPressed(GLFW_KEY_DOWN)){
-            dispInc.y = -1;
+        float move = diffTimeMillis * MOVEMENT_SPEED;
+        Camera camera = scene.getCamera();
+        if(window.isKeyPressed(GLFW_KEY_W)){
+            camera.moveForward(move);
+        } else if (window.isKeyPressed(GLFW_KEY_S)){
+            camera.moveBackwards(move);
         }
-        if (window.isKeyPressed(GLFW_KEY_RIGHT)){
-            dispInc.x = 1;
-        }else if(window.isKeyPressed(GLFW_KEY_LEFT)){
-            dispInc.x = -1;
+        if (window.isKeyPressed(GLFW_KEY_D)){
+            camera.moveRight(move);
+        }else if(window.isKeyPressed(GLFW_KEY_A)){
+            camera.moveLeft(move);
         }
-        if (window.isKeyPressed(GLFW_KEY_Q)){
-            dispInc.z = 1;
-        }else if (window.isKeyPressed(GLFW_KEY_A)){
-            dispInc.z = -1;
-        }
-        if(window.isKeyPressed(GLFW_KEY_X)){
-            dispInc.w = 1;
-        }else if(window.isKeyPressed(GLFW_KEY_Z)){
-            dispInc.w = -1;
+        if (window.isKeyPressed(GLFW_KEY_UP)){
+            camera.moveUp(move);
+        }else if (window.isKeyPressed(GLFW_KEY_DOWN)){
+            camera.moveDown(move);
         }
 
-        dispInc.mul(diffTimeMillis / 1000.0f);
-
-        Vector3f entityPos = cubeEntity.getPosition();
-        cubeEntity.setPosition(dispInc.x + entityPos.x, dispInc.y + entityPos.y, dispInc.z + entityPos.z );
-        cubeEntity.setScale(cubeEntity.getScale() + dispInc.w);
-        cubeEntity.updateModelMatrix();
+        MouseInput mouseInput = window.getMouseInput();
+        if(mouseInput.isRightButtonPressed()){
+            Vector2f dispVec = mouseInput.getDispVec();
+            camera.addRotation((float) Math.toRadians(-dispVec.x * MOUSE_SENSITIVITY), (float) Math.toRadians(-dispVec.y * MOUSE_SENSITIVITY));
+        }
 
     }
 

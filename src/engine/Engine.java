@@ -52,6 +52,7 @@ public class Engine {
             deltaFPS += (now - initialTime) / timeR;
 
             if (targetFPS <= 0 || deltaFPS >= 1){
+                window.getMouseInput().input();
                 logic.input(window, scene, now - initialTime);
             }
 

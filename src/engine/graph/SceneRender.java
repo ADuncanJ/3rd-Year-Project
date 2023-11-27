@@ -27,13 +27,16 @@ public class SceneRender {
         uniformsMap = new UniformsMap(shaderProgram.getProgramID());
         uniformsMap.createUniform("projectionMatrix");
         uniformsMap.createUniform("modelMatrix");
+        uniformsMap.createUniform("viewMatrix");
         uniformsMap.createUniform("txtSampler");
+        uniformsMap.createUniform("material.diffuse");
     }
 
     public void render(Scene scene){
         shaderProgram.bind();
 
         uniformsMap.setUniform("projectionMatrix", scene.getProjection().getProjMatrix());
+        uniformsMap.setUniform("viewMatrix", scene.getCamera().getViewMatrix());
 
         uniformsMap.setUniform("txtSampler", 0);
 
@@ -43,6 +46,7 @@ public class SceneRender {
             List<Entity> entities =model.getEntityList();
 
             for(Material material : model.getMaterialList()){
+                uniformsMap.setUniform("material.diffuse", material.getDiffuseColor());
                 Texture texture = textureCache.getTexture(material.getTexturePath());
                 glActiveTexture(GL_TEXTURE0);
                 texture.bind();
