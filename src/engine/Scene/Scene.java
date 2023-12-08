@@ -1,7 +1,9 @@
 package engine.Scene;
 
+import engine.GUIInstance;
 import engine.graph.Model;
 import engine.graph.TextureCache;
+import engine.Scene.lights.SceneLights;
 
 import java.util.*;
 
@@ -11,6 +13,8 @@ public class Scene {
     private Projection projection;
     private TextureCache textureCache;
     private Camera camera;
+    private GUIInstance guiInstance;
+    private SceneLights sceneLights;
 
     public Scene(int width, int height){
         modelMap =new HashMap<>();
@@ -51,5 +55,21 @@ public class Scene {
 
     public void resize(int width, int height){
         projection.updateProjMatirx(width, height);
+    }
+
+    public GUIInstance getGuiInstance(){
+        return guiInstance;
+    }
+
+    public void setGuiInstance(GUIInstance guiInstance){
+        this.guiInstance = guiInstance;
+    }
+
+    public SceneLights getSceneLights(){
+        return sceneLights;
+    }
+
+    public void setSceneLights(SceneLights sceneLights){
+        this.sceneLights = sceneLights;
     }
 }

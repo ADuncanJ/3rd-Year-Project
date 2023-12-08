@@ -63,5 +63,7 @@ public class MouseInput {
                 dispVec.x = (float) deltay;
             }
         }
+        previousPos.x = currentPos.x;
+        previousPos.y = currentPos.y;
     }
 }

@@ -56,5 +56,6 @@
     <orderEntry type="library" name="lwjgl-zstd" level="project" />
     <orderEntry type="library" name="joml" level="project" />
     <orderEntry type="library" name="tinylog" level="project" />
+    <orderEntry type="library" name="io.github.spair.imgui.java.app" level="project" />
   </component>
 </module>

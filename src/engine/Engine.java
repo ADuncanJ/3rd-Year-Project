@@ -19,7 +19,7 @@ public class Engine {
         targetFPS = opts.fps;
         targetUPS = opts.ups;
         this.logic = logic;
-        render = new Render();
+        render = new Render(window);
         scene = new Scene(window.getWidth(), window.getHeight());
         logic.init(window, scene, render);
         running = true;
@@ -33,7 +33,10 @@ public class Engine {
     }
 
     private void resize(){
-        scene.resize(window.getWidth(), window.getHeight());
+        int width = window.getWidth();
+        int height = window.getHeight();
+        scene.resize(width, height);
+        render.resize(width, height);
     }
 
     private void run(){
@@ -44,6 +47,7 @@ public class Engine {
         float deltaFPS = 0;
 
         long updateTime = initialTime;
+        GUIInstance guiInstance = scene.getGuiInstance();
         while (running && !window.windowShouldClose()){
             window.pollEvents();
 
@@ -53,7 +57,8 @@ public class Engine {
 
             if (targetFPS <= 0 || deltaFPS >= 1){
                 window.getMouseInput().input();
-                logic.input(window, scene, now - initialTime);
+                boolean inputConsumed = guiInstance != null ? guiInstance.handleGuiInput(scene, window) : false;
+                logic.input(window, scene, now - initialTime, inputConsumed);
             }
 
             if (deltaUpdate >= 1){
