@@ -1,34 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6843d09f-1d91-4da2-89d3-c8c291e44898" name="Changes" comment="add model import">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/io_github_spair_imgui_java_app.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/GUIInstance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Scene/lights/AmbientLight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Scene/lights/DirLight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Scene/lights/PointLight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Scene/lights/SceneLights.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Scene/lights/SpotLight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/graph/GUIMesh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/graph/GUIRender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/LightControls.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/cube/cube.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/cube/cube.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/shaders/gui.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/shaders/gui.vert" afterDir="false" />
+    <list default="true" id="6843d09f-1d91-4da2-89d3-c8c291e44898" name="Changes" comment="Implemented lights and a gui panel to control them">
+      <change afterPath="$PROJECT_DIR$/src/engine/Scene/Skybox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/graph/SkyBoxRender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/quad/quad.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/quad/quad.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/quad/quad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/skybox/skybox.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/skybox/skybox.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/skybox/skybox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/shaders/skybox.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/shaders/skybox.vert" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Engine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Logic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Logic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/MouseInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/MouseInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Scene/ModelLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Scene/ModelLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/Scene/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Scene/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/graph/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/Material.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/graph/Mesh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/Mesh.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/graph/Render.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/Render.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/graph/SceneRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/SceneRender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/graph/UniformsMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/UniformsMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/src.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="vs-template" />
+        <option value="fs-template" />
         <option value="Class" />
       </list>
     </option>
@@ -123,6 +113,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Reference.Main" />
       <module name="src" />
+      <shortenClasspath name="ARGS_FILE" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\Alexander Duncombe-J\IdeaProjects\23-24_CE301_duncombe-jones_alexander\javafx-sdk-21\lib&quot; --add-modules=javafx.controls" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,9 +128,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Boot" />
         <item itemvalue="Application.HelloWorld" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701127676467</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Implemented lights and a gui panel to control them">
+      <created>1702041037929</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702041037930</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -258,7 +256,8 @@
     <MESSAGE value="Created rotating cube" />
     <MESSAGE value="added textures" />
     <MESSAGE value="add model import" />
-    <option name="LAST_COMMIT_MESSAGE" value="add model import" />
+    <MESSAGE value="Implemented lights and a gui panel to control them" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented lights and a gui panel to control them" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -62,8 +62,8 @@ public class Engine {
             }
 
             if (deltaUpdate >= 1){
-                long diffTimwMillis = now - updateTime;
-                logic.update(window, scene, diffTimwMillis);
+                long diffTimeMillis = now - updateTime;
+                logic.update(window, scene, diffTimeMillis);
                 updateTime = now;
                 deltaUpdate --;
             }

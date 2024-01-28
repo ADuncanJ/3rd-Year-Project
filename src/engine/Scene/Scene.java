@@ -15,6 +15,7 @@ public class Scene {
     private Camera camera;
     private GUIInstance guiInstance;
     private SceneLights sceneLights;
+    private Skybox skyBox;
 
     public Scene(int width, int height){
         modelMap =new HashMap<>();
@@ -71,5 +72,13 @@ public class Scene {
 
     public void setSceneLights(SceneLights sceneLights){
         this.sceneLights = sceneLights;
+    }
+
+    public Skybox getSkyBox(){
+        return skyBox;
+    }
+
+    public void setSkyBox(Skybox skyBox){
+        this.skyBox = skyBox;
     }
 }

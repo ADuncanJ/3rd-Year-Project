@@ -21,6 +21,10 @@ public class Main implements Logic, GUIInstance {
     private static final float MOUSE_SENSITIVITY = 0.1f;
     private static final float MOVEMENT_SPEED = 0.005f;
 
+    private static final int NUM_CHUNKS = 4;
+
+    private Entity[][] terrainEntities;
+
     private Entity cubeEntity;
     private LightControls lightControls;
     private float rotation;
@@ -38,6 +42,21 @@ public class Main implements Logic, GUIInstance {
 
     @Override
     public void init(Window window, Scene scene, Render render) {
+        String quadModelID = "quad-model";
+        Model quadModel = ModelLoader.loadModel("quad-model", "src/resources/models/quad/quad.obj", scene.getTextureCache());
+        scene.addModel(quadModel);
+
+        int numRows = NUM_CHUNKS * 2 + 1;
+        int numCols = numRows;
+        terrainEntities = new Entity[numRows][numCols];
+        for(int j = 0; j < numRows; j++){
+            for (int i = 0; i < numCols; i++){
+                Entity entity = new Entity("TERRAIN_" + j + "_" + i, quadModelID);
+                terrainEntities[j][i] = entity;
+                scene.addEntity(entity);
+            }
+        }
+
         Model cubeModel = ModelLoader.loadModel("cube-model", "src/resources/models/cube/cube.obj",scene.getTextureCache());
         scene.addModel(cubeModel);
 
@@ -54,6 +73,12 @@ public class Main implements Logic, GUIInstance {
         sceneLights.getSpotLights().add(new SpotLight(new PointLight(new Vector3f(1, 1, 1), new Vector3f(0, 0, -1.4f), 0.0f), coneDir, 140f));
         lightControls = new LightControls(scene);
         scene.setGuiInstance(lightControls);
+
+        Skybox skybox = new Skybox("src/resources/models/skybox/skybox.obj", scene.getTextureCache());
+        skybox.getSkyBoxEntity().setScale(50);
+        scene.setSkyBox(skybox);
+
+        updateTerrain(scene);
     }
 
     @Override
@@ -96,7 +121,33 @@ public class Main implements Logic, GUIInstance {
         }
         cubeEntity.setRotation(1, 1, 1, (float) Math.toRadians(rotation));
         cubeEntity.updateModelMatrix();
+        updateTerrain(scene);
     }
+
+    public void updateTerrain(Scene scene){
+        int cellSize = 10;
+        Camera camera = scene.getCamera();
+        Vector3f cameraPos = camera.getPosition();
+        int cellCol = (int) (cameraPos.x / cellSize);
+        int cellRow = (int) (cameraPos.z / cellSize);
+
+        int numRows = NUM_CHUNKS * 2 + 1;
+        int numCols = numRows;
+        int zOffset = -NUM_CHUNKS;
+        float scale = cellSize / 2.0f;
+        for(int j = 0; j < numRows; j++){
+            int xOffset = -NUM_CHUNKS;
+            for(int i = 0; i < numCols; i++){
+                Entity entity = terrainEntities[j][i];
+                entity.setScale(scale);
+                entity.setPosition((cellCol + xOffset) * 2.0f, 0, (cellRow + zOffset) * 2.0f);
+                entity.getModelMatrix().identity().scale(scale).translate(entity.getPosition());
+                xOffset++;
+            }
+            zOffset++;
+        }
+    }
+
     @Override
     public void drawGui(){
         ImGui.newFrame();
