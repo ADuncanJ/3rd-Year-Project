@@ -42,20 +42,14 @@ public class Main implements Logic, GUIInstance {
 
     @Override
     public void init(Window window, Scene scene, Render render) {
-        String quadModelID = "quad-model";
-        Model quadModel = ModelLoader.loadModel("quad-model", "src/resources/models/quad/quad.obj", scene.getTextureCache());
-        scene.addModel(quadModel);
+        String terrainModelID = "terrain";
+        Model terrainModel = ModelLoader.loadModel(terrainModelID, "src/resources/models/terrain/terrain.obj", scene.getTextureCache());
+        scene.addModel(terrainModel);
 
-        int numRows = NUM_CHUNKS * 2 + 1;
-        int numCols = numRows;
-        terrainEntities = new Entity[numRows][numCols];
-        for(int j = 0; j < numRows; j++){
-            for (int i = 0; i < numCols; i++){
-                Entity entity = new Entity("TERRAIN_" + j + "_" + i, quadModelID);
-                terrainEntities[j][i] = entity;
-                scene.addEntity(entity);
-            }
-        }
+        Entity terrainEntity = new Entity("terrainEntity", terrainModelID);
+        terrainEntity.setScale(100.0f);
+        terrainEntity.updateModelMatrix();
+        scene.addEntity(terrainEntity);
 
         Model cubeModel = ModelLoader.loadModel("cube-model", "src/resources/models/cube/cube.obj",scene.getTextureCache());
         scene.addModel(cubeModel);
@@ -78,7 +72,11 @@ public class Main implements Logic, GUIInstance {
         skybox.getSkyBoxEntity().setScale(50);
         scene.setSkyBox(skybox);
 
-        updateTerrain(scene);
+        scene.setFog(new Fog(true, new Vector3f(0.5f, 0.5f, 0.5f), 0.95f));
+
+        scene.getCamera().moveUp(0.1f);
+
+        //updateTerrain(scene);
     }
 
     @Override
@@ -121,10 +119,10 @@ public class Main implements Logic, GUIInstance {
         }
         cubeEntity.setRotation(1, 1, 1, (float) Math.toRadians(rotation));
         cubeEntity.updateModelMatrix();
-        updateTerrain(scene);
+        //updateTerrain(scene);
     }
 
-    public void updateTerrain(Scene scene){
+    /*public void updateTerrain(Scene scene){
         int cellSize = 10;
         Camera camera = scene.getCamera();
         Vector3f cameraPos = camera.getPosition();
@@ -146,7 +144,7 @@ public class Main implements Logic, GUIInstance {
             }
             zOffset++;
         }
-    }
+    }*/
 
     @Override
     public void drawGui(){
