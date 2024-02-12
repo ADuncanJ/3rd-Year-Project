@@ -14,7 +14,7 @@ public class Mesh {
     private int vaoID;
     private List<Integer> vboIDList;
 
-    public Mesh(float[] positions,float[] normals, float[]  textCoords,int[] indices){
+    public Mesh(float[] positions,float[] normals, float[] tangents, float[] bitangents, float[]  textCoords,int[] indices){
         try(MemoryStack stack = MemoryStack.stackPush()){
             numVertices = indices.length;
             vboIDList = new ArrayList<>();
@@ -40,6 +40,26 @@ public class Mesh {
             glBufferData(GL_ARRAY_BUFFER, normalsBuffer, GL_STATIC_DRAW);
             glEnableVertexAttribArray(1);
             glVertexAttribPointer(1, 3, GL_FLOAT, false, 0, 0);
+
+            //tangents VBO
+            vboID = glGenBuffers();
+            vboIDList.add(vboID);
+            FloatBuffer tangentsBuffer = stack.callocFloat(tangents.length);
+            tangentsBuffer.put(0, tangents);
+            glBindBuffer(GL_ARRAY_BUFFER, vboID);
+            glBufferData(GL_ARRAY_BUFFER, tangentsBuffer, GL_STATIC_DRAW);
+            glEnableVertexAttribArray(2);
+            glVertexAttribPointer(2, 3, GL_FLOAT, false, 0, 0);
+
+            //bitangents VBO
+            vboID = glGenBuffers();
+            vboIDList.add(vboID);
+            FloatBuffer bitangentsBuffer = stack.callocFloat(bitangents.length);
+            bitangentsBuffer.put(0, bitangents);
+            glBindBuffer(GL_ARRAY_BUFFER, vboID);
+            glBufferData(GL_ARRAY_BUFFER, bitangentsBuffer, GL_STATIC_DRAW);
+            glEnableVertexAttribArray(3);
+            glVertexAttribPointer(3, 3, GL_FLOAT, false, 0, 0);
 
             //texture coordinates VBO
             vboID = glGenBuffers();

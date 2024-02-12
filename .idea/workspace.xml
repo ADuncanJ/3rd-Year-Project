@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6843d09f-1d91-4da2-89d3-c8c291e44898" name="Changes" comment="Added a skybox">
-      <change afterPath="$PROJECT_DIR$/src/engine/Scene/Fog.java" afterDir="false" />
+    <list default="true" id="6843d09f-1d91-4da2-89d3-c8c291e44898" name="Changes" comment="Added a Fog">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/engine/Scene/Scene.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/engine/Scene/Scene.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/engine/graph/SceneRender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/engine/graph/SceneRender.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/game/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/resources/shaders/scene.frag" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/resources/shaders/scene.frag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Scene/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Scene/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Scene/ModelLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Scene/ModelLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/Material.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/Mesh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/Mesh.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/graph/SceneRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/SceneRender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/shaders/scene.frag" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/shaders/scene.frag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/shaders/scene.vert" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/shaders/scene.vert" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706441037063</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added a Fog">
+      <created>1707140785274</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1707140785274</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -260,7 +264,8 @@
     <MESSAGE value="add model import" />
     <MESSAGE value="Implemented lights and a gui panel to control them" />
     <MESSAGE value="Added a skybox" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a skybox" />
+    <MESSAGE value="Added a Fog" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a Fog" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
