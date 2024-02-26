@@ -8,7 +8,7 @@ public class Skybox {
     private Model skyBoxModel;
 
     public Skybox(String skyBoxModelPath, TextureCache textureCache){
-        skyBoxModel = ModelLoader.loadModel("skybox-model", skyBoxModelPath, textureCache);
+        skyBoxModel = ModelLoader.loadModel("skybox-model", skyBoxModelPath, textureCache, false);
         skyBoxEntity = new Entity("skyBoxEnitiy-entity", skyBoxModel.getId());
     }
 

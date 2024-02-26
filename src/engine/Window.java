@@ -29,6 +29,10 @@ public class Window {
         glfwWindowHint(GLFW_VISIBLE, GLFW_FALSE);
         glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE);
 
+        if (opts.antiAliasing){
+            glfwWindowHint(GLFW_SAMPLES, 4);
+        }
+
         glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
         glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
         if(opts.compatibleProfile){
@@ -139,6 +143,7 @@ public class Window {
     }
 
     public static class WindowOptions{
+        public boolean antiAliasing;
         public boolean compatibleProfile;
         public int fps;
         public int height;
