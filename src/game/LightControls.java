@@ -80,7 +80,7 @@ public class LightControls implements GUIInstance{
 
         ImGui.begin("Lights controls");
         if (ImGui.collapsingHeader("Ambient Light")) {
-            ImGui.sliderFloat("Ambient factor", ambientFactor, 0.0f, 1.0f, "%.2f");
+            ImGui.sliderFloat("Ambient factor", ambientFactor, 0.0f, 5.0f, "%.2f");
             ImGui.colorEdit3("Ambient color", ambientColor);
         }
 
@@ -89,7 +89,7 @@ public class LightControls implements GUIInstance{
             ImGui.sliderFloat("Point Light - y", pointLightY, -10.0f, 10.0f, "%.2f");
             ImGui.sliderFloat("Point Light - z", pointLightZ, -10.0f, 10.0f, "%.2f");
             ImGui.colorEdit3("Point Light color", pointLightColor);
-            ImGui.sliderFloat("Point Light Intensity", pointLightIntensity, 0.0f, 1.0f, "%.2f");
+            ImGui.sliderFloat("Point Light Intensity", pointLightIntensity, 0.0f, 5.0f, "%.2f");
         }
 
         if (ImGui.collapsingHeader("Spot Light")) {
@@ -97,7 +97,7 @@ public class LightControls implements GUIInstance{
             ImGui.sliderFloat("Spot Light - y", spotLightY, -10.0f, 10.0f, "%.2f");
             ImGui.sliderFloat("Spot Light - z", spotLightZ, -10.0f, 10.0f, "%.2f");
             ImGui.colorEdit3("Spot Light color", spotLightColor);
-            ImGui.sliderFloat("Spot Light Intensity", spotLightIntensity, 0.0f, 1.0f, "%.2f");
+            ImGui.sliderFloat("Spot Light Intensity", spotLightIntensity, 0.0f, 5.0f, "%.2f");
             ImGui.separator();
             ImGui.sliderFloat("Spot Light cutoff", spotLightCuttoff, 0.0f, 360.0f, "%2.f");
             ImGui.sliderFloat("Dir cone - x", dirConeX, -1.0f, 1.0f, "%.2f");
@@ -110,7 +110,7 @@ public class LightControls implements GUIInstance{
             ImGui.sliderFloat("Dir Light - y", dirLightY, -1.0f, 1.0f, "%.2f");
             ImGui.sliderFloat("Dir Light - z", dirLightZ, -1.0f, 1.0f, "%.2f");
             ImGui.colorEdit3("Dir Light color", dirLightColor);
-            ImGui.sliderFloat("Dir Light Intensity", dirLightIntensity, 0.0f, 1.0f, "%.2f");
+            ImGui.sliderFloat("Dir Light Intensity", dirLightIntensity, 0.0f, 5.0f, "%.2f");
         }
 
         ImGui.end();

@@ -1,50 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6843d09f-1d91-4da2-89d3-c8c291e44898" name="Changes" comment="Added Normal Map">
-      <change afterPath="$PROJECT_DIR$/src/engine/Scene/AnimationData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Scene/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/graph/ArrTexture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/graph/CascadeShadow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/graph/ShadowBuffer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/graph/ShadowRender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/wall/skybox.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/wall/wall.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/wall/wall.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/wall/wall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/wall/wall_nonormals.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/wall/wall_nonormals.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/wall/wall_normals.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/shaders/shadow.vert" afterDir="false" />
+    <list default="true" id="6843d09f-1d91-4da2-89d3-c8c291e44898" name="Changes" comment="Added shadows and animations">
+      <change afterPath="$PROJECT_DIR$/src/resources/models/bark/bark-normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/bark/bark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/bark/cube.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/bark/cube.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/house/brick-normals.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/house/brick.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/house/cube.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/house/cube.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/terrain/grass.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/tree/tree.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/tri_prism/Prism.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/engine/Scene/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/engine/Scene/Entity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/engine/Scene/ModelLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/engine/Scene/ModelLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/engine/Scene/Skybox.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/engine/Scene/Skybox.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/engine/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/engine/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/engine/Window$WindowOptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/engine/Window$WindowOptions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/engine/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/engine/Window.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/engine/graph/Material.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/engine/graph/Material.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/engine/graph/Mesh.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/engine/graph/Mesh.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/engine/graph/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/engine/graph/Model.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/engine/graph/Render.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/engine/graph/Render.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/engine/graph/SceneRender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/engine/graph/SceneRender.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/engine/graph/UniformsMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/engine/graph/UniformsMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/Reference/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/Reference/Main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/Reference/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/engine/graph/Texture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/engine/graph/Texture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/game/LightControls.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/game/LightControls.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/src/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/game/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/resources/shaders/scene.frag" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/resources/shaders/scene.frag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/resources/shaders/scene.vert" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/resources/shaders/scene.vert" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Scene/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Scene/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Scene/ModelLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Scene/ModelLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Scene/Skybox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Scene/Skybox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/graph/Mesh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/Mesh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/graph/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/graph/Render.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/Render.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/graph/SceneRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/SceneRender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/graph/UniformsMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/UniformsMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/resources/models/skybox/skybox.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/resources/models/skybox/skybox.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reference/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reference/Main1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/Texture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/Texture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/LightControls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/LightControls.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/shaders/scene.frag" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/shaders/scene.frag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/shaders/scene.vert" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/shaders/scene.vert" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/models/skybox/skybox.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/models/skybox/skybox.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +75,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="openjdk-17" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Compilers Assignment 1" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -147,15 +128,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="game.Main" />
+      <module name="src" />
+      <shortenClasspath name="ARGS_FILE" />
+      <option name="VM_PARAMETERS" value="-Xss1g" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <shortenClasspath name="ARGS_FILE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Boot" />
+      <item itemvalue="Application.HelloWorld" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Boot" />
         <item itemvalue="Application.HelloWorld" />
@@ -283,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707745786677</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added shadows and animations">
+      <created>1708952869330</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1708952869330</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -309,7 +319,8 @@
     <MESSAGE value="Added a skybox" />
     <MESSAGE value="Added a Fog" />
     <MESSAGE value="Added Normal Map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Normal Map" />
+    <MESSAGE value="Added shadows and animations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added shadows and animations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -327,6 +338,11 @@
           <url>file://$PROJECT_DIR$/src/Reference/Boot.java</url>
           <line>101</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/engine/graph/Mesh.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
