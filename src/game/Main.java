@@ -102,7 +102,6 @@ public class Main implements Logic, GUIInstance {
         tree(-39, 0, -94, scene, logModel, leafModel);
         tree(-28, 0, -85, scene, logModel, leafModel);
         tree(-98, 0, -13, scene, logModel, leafModel);
-        tree(-9, 0, 18, scene, logModel, leafModel);
         tree(-55, 0, 67, scene, logModel, leafModel);
         tree(-84, 0, 11, scene, logModel, leafModel);
         tree(-72, 0, -43, scene, logModel, leafModel);

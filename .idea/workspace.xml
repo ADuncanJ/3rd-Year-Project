@@ -1,31 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6843d09f-1d91-4da2-89d3-c8c291e44898" name="Changes" comment="Added shadows and animations">
-      <change afterPath="$PROJECT_DIR$/src/resources/models/bark/bark-normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/bark/bark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/bark/cube.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/bark/cube.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/house/brick-normals.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/house/brick.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/house/cube.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/house/cube.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/terrain/grass.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/tree/tree.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/models/tri_prism/Prism.obj" afterDir="false" />
+    <list default="true" id="6843d09f-1d91-4da2-89d3-c8c291e44898" name="Changes" comment="Modularised Houses and Trees&#10;Added more houses and trees">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/Reference/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/Reference/Main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/Reference/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/engine/graph/Texture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/engine/graph/Texture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/game/LightControls.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/game/LightControls.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/game/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/resources/models/skybox/skybox.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/resources/models/skybox/skybox.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reference/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reference/Main1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/graph/Texture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/Texture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/LightControls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/LightControls.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/models/skybox/skybox.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/models/skybox/skybox.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,7 +271,28 @@
       <option name="project" value="LOCAL" />
       <updated>1708952869330</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Modularised Houses and Trees&#10;Added more houses and trees">
+      <created>1713914037378</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1713914037378</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Modularised Houses and Trees&#10;Added more houses and trees">
+      <created>1713914191834</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1713914191834</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Modularised Houses and Trees&#10;Added more houses and trees">
+      <created>1713914254464</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1713914254464</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -320,7 +319,8 @@
     <MESSAGE value="Added a Fog" />
     <MESSAGE value="Added Normal Map" />
     <MESSAGE value="Added shadows and animations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added shadows and animations" />
+    <MESSAGE value="Modularised Houses and Trees&#10;Added more houses and trees" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modularised Houses and Trees&#10;Added more houses and trees" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
