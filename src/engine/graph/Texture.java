@@ -16,7 +16,8 @@ public class Texture {
         this.texturePath = "";
         generateTexture(width, height, buffer);
     }
-
+    /*Derived from:
+     * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
     public Texture(String texturePath){
         try (MemoryStack stack = MemoryStack.stackPush()){
             this.texturePath = texturePath;

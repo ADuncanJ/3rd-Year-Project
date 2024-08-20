@@ -6,7 +6,8 @@ import org.lwjgl.opengl.GL;
 
 import static org.lwjgl.opengl.GL13.*;
 
-
+/*Derived from:
+ * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
 public class Render {
 
     private SceneRender sceneRender;
@@ -18,8 +19,8 @@ public class Render {
         GL.createCapabilities();
         glEnable(GL_MULTISAMPLE);
         glEnable(GL_DEPTH_TEST);
-        //glEnable(GL_CULL_FACE);
-        //glCullFace(GL_BACK);
+        glEnable(GL_CULL_FACE);
+        glCullFace(GL_BACK);
 
         glEnable(GL_BLEND);
         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);

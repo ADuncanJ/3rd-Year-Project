@@ -3,7 +3,8 @@ package engine.Scene.lights;
 import org.joml.Vector3f;
 
 import java.util.*;
-
+/*Derived from:
+ * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
 public class SceneLights {
 
     private AmbientLight ambientLight;

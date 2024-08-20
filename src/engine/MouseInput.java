@@ -3,7 +3,8 @@ package engine;
 import org.joml.Vector2f;
 
 import static org.lwjgl.glfw.GLFW.*;
-
+/*Derived from:
+ * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
 public class MouseInput {
 
     private Vector2f currentPos;

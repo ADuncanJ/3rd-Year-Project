@@ -6,7 +6,8 @@ import org.joml.*;
 import engine.*;
 import engine.Scene.Scene;
 import engine.Scene.lights.*;
-
+/*Derived from:
+ * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
 public class LightControls implements GUIInstance{
     private float[] ambientColor;
     private float[] ambientFactor;

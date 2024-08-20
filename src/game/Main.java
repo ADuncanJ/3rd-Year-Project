@@ -169,6 +169,8 @@ public class Main implements Logic, GUIInstance {
         bobEntity.setRotation(0,1,0, (float)Math.toRadians(90));
         scene.addEntity(bobEntity);
 
+        /*Derived from:
+         * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
         SceneLights sceneLights = new SceneLights();
         AmbientLight ambientLight = sceneLights.getAmbientLight();
         ambientLight.setIntensity(3f);
@@ -772,6 +774,9 @@ public class Main implements Logic, GUIInstance {
         scene.addEntity(leafEntity);
     }
 
+
+    /*Derived from:
+     * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
     @Override
     public void input(Window window, Scene scene, long diffTimeMillis, boolean inputConsumed) {
         if(inputConsumed){
@@ -857,7 +862,8 @@ public class Main implements Logic, GUIInstance {
             zOffset++;
         }
     }*/
-
+    /*Derived from:
+     * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
     @Override
     public void drawGui(){
         ImGui.newFrame();
@@ -866,7 +872,8 @@ public class Main implements Logic, GUIInstance {
         ImGui.endFrame();
         ImGui.render();
     }
-
+    /*Derived from:
+     * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
     @Override
     public boolean handleGuiInput(Scene scene, Window window){
         ImGuiIO imGuiIO = ImGui.getIO();

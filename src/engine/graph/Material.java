@@ -4,7 +4,8 @@ import org.joml.Vector4f;
 import org.lwjgl.util.freetype.FreeType;
 
 import java.util.*;
-
+/*Derived from:
+ * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
 public class Material {
 
     public static final Vector4f DEFAULT_COLOR = new Vector4f(0.0f, 0.0f, 0.0f, 1.0f);

@@ -6,7 +6,8 @@ import engine.graph.TextureCache;
 import engine.Scene.lights.SceneLights;
 
 import java.util.*;
-
+/*Derived from:
+ * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
 public class Scene {
 
     private Map<String, Model> modelMap;

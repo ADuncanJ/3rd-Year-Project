@@ -4,7 +4,8 @@ import org.joml.*;
 import engine.Scene.Scene;
 
 import java.util.*;
-
+/*Derived from:
+ * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
 public class CascadeShadow {
 
     public static final int SHADOW_MAP_CASCADE_COUNT = 3;

@@ -3,6 +3,38 @@
   <component name="ChangeListManager">
     <list default="true" id="6843d09f-1d91-4da2-89d3-c8c291e44898" name="Changes" comment="Modularised Houses and Trees&#10;Added more houses and trees">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/engine/graph/Render.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/engine/graph/Render.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/game/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Logic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Logic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/MouseInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/MouseInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Scene/AnimationData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Scene/AnimationData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Scene/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Scene/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Scene/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Scene/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Scene/ModelLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Scene/ModelLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Scene/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Scene/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Scene/lights/AmbientLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Scene/lights/AmbientLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Scene/lights/DirLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Scene/lights/DirLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Scene/lights/PointLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Scene/lights/PointLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Scene/lights/SceneLights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Scene/lights/SceneLights.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Scene/lights/SpotLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Scene/lights/SpotLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/ArrTexture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/ArrTexture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/CascadeShadow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/CascadeShadow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/GUIMesh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/GUIMesh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/GUIRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/GUIRender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/Material.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/Mesh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/Mesh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/Render.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/Render.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/SceneRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/SceneRender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/ShaderProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/ShaderProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/ShadowBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/ShadowBuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/ShadowRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/ShadowRender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/SkyBoxRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/SkyBoxRender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/Texture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/Texture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/TextureCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/TextureCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/graph/UniformsMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/graph/UniformsMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/LightControls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/LightControls.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -292,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713914254464</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Modularised Houses and Trees&#10;Added more houses and trees">
+      <created>1714079111065</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1714079111065</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -338,11 +377,6 @@
           <url>file://$PROJECT_DIR$/src/Reference/Boot.java</url>
           <line>101</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/engine/graph/Mesh.java</url>
-          <line>106</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

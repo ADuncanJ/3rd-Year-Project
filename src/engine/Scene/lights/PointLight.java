@@ -1,7 +1,8 @@
 package engine.Scene.lights;
 
 import org.joml.Vector3f;
-
+/*Derived from:
+ * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
 public class PointLight {
 
     private Attenuation attenuation;

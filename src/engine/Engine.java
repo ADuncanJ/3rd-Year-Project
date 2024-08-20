@@ -2,7 +2,8 @@ package engine;
 
 import engine.graph.Render;
 import engine.Scene.Scene;
-
+/*Derived from:
+ * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
 public class Engine {
 
     public static final int TARGET_UPS = 30;

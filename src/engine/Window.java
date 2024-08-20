@@ -11,7 +11,8 @@ import org.pmw.tinylog.Logger;
 
 import java.util.concurrent.Callable;
 
-
+/*Derived from:
+ * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
 public class Window {
 
     private final long windowHandle;

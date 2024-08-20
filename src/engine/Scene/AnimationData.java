@@ -4,7 +4,8 @@ import org.joml.Matrix4f;
 import engine.graph.Model;
 
 import java.util.Arrays;
-
+/*Derived from:
+ * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
 public class AnimationData {
     public static final Matrix4f[] DEFAULT_BONES_MATRICES = new Matrix4f[ModelLoader.MAX_BONES];
 

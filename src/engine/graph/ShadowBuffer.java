@@ -3,7 +3,8 @@ package engine.graph;
 import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.opengl.GL13.glActiveTexture;
 import static org.lwjgl.opengl.GL30.*;
-
+/*Derived from:
+ * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
 public class ShadowBuffer {
     public static final int SHADOW_MAP_WIDTH = 4096;
 

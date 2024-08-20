@@ -5,7 +5,8 @@ import engine.Utils;
 
 import java.util.*;
 import static org.lwjgl.opengl.GL30.*;
-
+/*Derived from:
+ * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
 public class ShaderProgram {
 
     private final int programID;

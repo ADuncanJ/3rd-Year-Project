@@ -1,7 +1,8 @@
 package engine.graph;
 
 import java.util.*;
-
+/*Derived from:
+ * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
 public class TextureCache {
 
     public static final String DEFAULT_TEXTURE = "src/resources/models/default/default_texture.png";

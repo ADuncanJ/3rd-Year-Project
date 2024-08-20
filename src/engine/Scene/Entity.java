@@ -1,7 +1,8 @@
 package engine.Scene;
 
 import org.joml.*;
-
+/*Derived from:
+ * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
 public class Entity {
 
     private final String id;

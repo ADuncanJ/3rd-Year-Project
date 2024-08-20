@@ -6,7 +6,8 @@ import org.lwjgl.system.MemoryStack;
 import java.nio.FloatBuffer;
 import java.util.*;
 import static org.lwjgl.opengl.GL20.*;
-
+/*Derived from:
+ * A. H. Benjarano, “3D Game Development with LWJGL 3” https://ahbejarano.gitbook.io/lwjglgamedev*/
 public class UniformsMap {
 
     private int programID;
